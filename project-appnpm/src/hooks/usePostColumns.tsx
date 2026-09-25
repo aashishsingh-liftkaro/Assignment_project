@@ -7,9 +7,6 @@ const usePostColumns = (): ColumnDef<any, Post>[] => {
       accessorKey: "id",
       header: "ID",
     },
-
-    
-
     {
       accessorKey: "tags",
       header: "Tags",

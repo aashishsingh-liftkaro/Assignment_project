@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Statistics */}
+     
       <section>
         <div className="mb-4">
           <h2 className="text-xl font-semibold tracking-tight">
@@ -131,14 +131,10 @@ const Home = () => {
 
       {/* Remote Testimonials */}
       <section>
-
         <Suspense
-          fallback={
-            <div className="flex min-h-[200px] items-center justify-center rounded-xl border bg-gray-50">
-              <p className="text-sm text-gray-500">
+          fallback={ <p className="text-sm text-gray-500">
                 Loading testimonials...
               </p>
-            </div>
           }
         >
           <Testimonial />

@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"\\\"C:\\\\\\\\Program Files\\\\\\\\nodejs\\\\\\\\node.exe\\\" C:\\\\Users\\\\lenovo\\\\Desktop\\\\TEST\\\\UserTesting\\\\remote\\\\node_modules\\\\typescript\\\\bin\\\\tsc --project C:\\\\Users\\\\lenovo\\\\Desktop\\\\TEST\\\\UserTesting\\\\remote\\\\node_modules\\\\.federation\\\\tsconfig.07ab869ab70f476bea615c00e58602b0.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"\\\"C:\\\\\\\\Program Files\\\\\\\\nodejs\\\\\\\\node.exe\\\" C:\\\\Users\\\\lenovo\\\\Desktop\\\\TEST\\\\UserTesting\\\\remote\\\\node_modules\\\\typescript\\\\bin\\\\tsc --project C:\\\\Users\\\\lenovo\\\\Desktop\\\\TEST\\\\UserTesting\\\\remote\\\\node_modules\\\\.federation\\\\tsconfig.b618d5769156e2931d2ee6a6030b1a1d.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" C:\\Users\\lenovo\\Desktop\\TEST\\UserTesting\\remote\\node_modules\\typescript\\bin\\tsc --project C:\\Users\\lenovo\\Desktop\\TEST\\UserTesting\\remote\\node_modules\\.federation\\tsconfig.07ab869ab70f476bea615c00e58602b0.json"
+      "cmd": "\"C:\\\\Program Files\\\\nodejs\\\\node.exe\" C:\\Users\\lenovo\\Desktop\\TEST\\UserTesting\\remote\\node_modules\\typescript\\bin\\tsc --project C:\\Users\\lenovo\\Desktop\\TEST\\UserTesting\\remote\\node_modules\\.federation\\tsconfig.b618d5769156e2931d2ee6a6030b1a1d.json"
     },
-    "timestamp": 1790330353920
+    "timestamp": 1790333301373
   }
 }

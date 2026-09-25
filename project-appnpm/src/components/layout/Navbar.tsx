@@ -4,11 +4,8 @@ const Navbar = () => {
   return (
     <nav className="border-b bg-white">
       <div className="mx-auto flex h-16 container items-center justify-between px-6">
-        <NavLink
-          to="/"
-          className="text-xl font-bold text-blue-600"
-        >
-        ProjectApp
+        <NavLink to="/" className="text-xl font-bold text-blue-600">
+          ProjectApp
         </NavLink>
 
         <div className="flex items-center gap-2">
@@ -66,7 +63,6 @@ const Navbar = () => {
           </NavLink>
         </div>
 
-      
         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-semibold text-white">
           AS
         </div>

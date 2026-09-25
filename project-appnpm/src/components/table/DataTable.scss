@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* Table wrapper */
 .data-table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -14,7 +13,6 @@
   background: $background-color;
 }
 
-/* Table */
 .data-table {
   width: 100%;
   min-width: 700px;
@@ -28,7 +26,6 @@
     white-space: nowrap;
   }
 
-  /* Header */
   th {
     background: $background-light;
     color: $text-secondary;
@@ -36,13 +33,11 @@
     border-bottom: 1px solid $border-color;
   }
 
-  /* Body */
   td {
     color: $text-muted;
     border-bottom: 1px solid $border-light;
   }
 
-  /* Rows */
   tbody tr {
     transition: background-color 0.15s ease;
 
@@ -56,7 +51,6 @@
   }
 }
 
-/* Empty state */
 .data-table-empty {
   padding: $spacing-2xl $spacing-lg !important;
   text-align: center !important;
@@ -74,7 +68,6 @@
   padding: $spacing-md 0;
 }
 
-/* Pagination controls */
 .data-table-pagination-controls {
   display: flex;
   align-items: center;
@@ -84,16 +77,12 @@
     min-width: 36px;
     height: 36px;
     padding: 0 $spacing-md;
-
     border: 1px solid $border-color;
     border-radius: $border-radius-sm;
-
     background: $background-color;
     color: $text-secondary;
-
     font-size: 14px;
     cursor: pointer;
-
     transition:
       background-color 0.15s ease,
       border-color 0.15s ease,
@@ -115,7 +104,6 @@
     color: $text-muted;
     font-size: 14px;
     white-space: nowrap;
-
     strong {
       color: $text-color;
       font-weight: 600;
@@ -127,28 +115,23 @@
 .data-table-pagination > select {
   height: 36px;
   padding: 0 $spacing-2xl 0 $spacing-md;
-
   border: 1px solid $border-color;
   border-radius: $border-radius-sm;
-
   background: $background-color;
   color: $text-secondary;
-
   font-size: 14px;
   cursor: pointer;
   outline: none;
-
   &:hover {
     border-color: $border-hover;
   }
-
   &:focus {
     border-color: $primary-color;
     box-shadow: 0 0 0 2px rgba($primary-color, 0.1);
   }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
   .data-table-pagination {
     flex-direction: column;

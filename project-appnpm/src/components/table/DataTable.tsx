@@ -32,7 +32,7 @@ export function DataTable<TData extends RowData>({
         rowPaginationFeature,
         paginatedRowModel: createPaginatedRowModel(),
       }),
-    []
+    [],
   );
 
   const table = useTable({
@@ -64,7 +64,7 @@ export function DataTable<TData extends RowData>({
                       ? null
                       : flexRender(
                           header.column.columnDef.header,
-                          header.getContext()
+                          header.getContext(),
                         )}
                   </th>
                 ))}
@@ -75,10 +75,7 @@ export function DataTable<TData extends RowData>({
           <tbody>
             {rows.length === 0 ? (
               <tr>
-                <td
-                  colSpan={columns.length}
-                  className="data-table-empty"
-                >
+                <td colSpan={columns.length} className="data-table-empty">
                   No data found
                 </td>
               </tr>

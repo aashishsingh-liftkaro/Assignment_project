@@ -1,23 +1,19 @@
 @use "../styles/variable.scss" as *;
 
 .table-header {
-
   background: $primary-color;
   padding: $padding-md;
   border-radius: $rounded-sm;
-
 }
-
 .table-header-title {
-
-  color:$white;
+  color: $white;
   font-size: 20px;
   font-weight: 600;
 }
 
 .table-header-description {
   margin: $spacing-xs 0 0;
-  color:$background-light;
+  color: $background-light;
   font-size: 14px;
   line-height: 1.5;
 }
