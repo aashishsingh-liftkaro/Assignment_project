@@ -1,0 +1,165 @@
+@use "../../styles/variable.scss" as *;
+
+.data-table-container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Table wrapper */
+.data-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  background: $background-color;
+}
+
+/* Table */
+.data-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  th,
+  td {
+    padding: $spacing-md $spacing-lg;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  /* Header */
+  th {
+    background: $background-light;
+    color: $text-secondary;
+    font-weight: 600;
+    border-bottom: 1px solid $border-color;
+  }
+
+  /* Body */
+  td {
+    color: $text-muted;
+    border-bottom: 1px solid $border-light;
+  }
+
+  /* Rows */
+  tbody tr {
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background: $background-light;
+    }
+
+    &:last-child td {
+      border-bottom: none;
+    }
+  }
+}
+
+/* Empty state */
+.data-table-empty {
+  padding: $spacing-2xl $spacing-lg !important;
+  text-align: center !important;
+  color: $text-muted !important;
+  font-size: 14px;
+}
+
+/* Pagination */
+.data-table-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $spacing-lg;
+  margin-top: $spacing-lg;
+  padding: $spacing-md 0;
+}
+
+/* Pagination controls */
+.data-table-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+
+  button {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 $spacing-md;
+
+    border: 1px solid $border-color;
+    border-radius: $border-radius-sm;
+
+    background: $background-color;
+    color: $text-secondary;
+
+    font-size: 14px;
+    cursor: pointer;
+
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+
+    &:hover:not(:disabled) {
+      background: $background-hover;
+      border-color: $border-hover;
+    }
+
+    &:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    margin: 0 $spacing-sm;
+    color: $text-muted;
+    font-size: 14px;
+    white-space: nowrap;
+
+    strong {
+      color: $text-color;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Page size */
+.data-table-pagination > select {
+  height: 36px;
+  padding: 0 $spacing-2xl 0 $spacing-md;
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+
+  background: $background-color;
+  color: $text-secondary;
+
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    border-color: $border-hover;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.1);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .data-table-pagination {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .data-table-pagination-controls {
+    justify-content: center;
+  }
+
+  .data-table-pagination > select {
+    width: 100%;
+  }
+}
