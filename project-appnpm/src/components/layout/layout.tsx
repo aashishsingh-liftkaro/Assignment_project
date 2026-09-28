@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 import Navbar from "./Navbar";
-const Footer = lazy(() => import("remote/Footer"));
+// const Footer = lazy(() => import("remote/Footer"));
 const Layout = () => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -13,7 +13,7 @@ const Layout = () => {
       </main>
 
       <Suspense fallback={<p>Loading..</p>}>
-        <Footer />
+        {/* <Footer /> */}
       </Suspense>
     </div>
   );
