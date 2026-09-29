@@ -49,7 +49,7 @@ export interface Product {
   rating: number;
   stock: number;
   tags: string[];
-  // add more fields here if you use them from the API
+  
 }
 
 export interface ProductsResponse {
