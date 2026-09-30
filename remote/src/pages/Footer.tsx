@@ -45,14 +45,7 @@ const Footer = () => {
                 </a>
               </li>
 
-              <li>
-                <a
-                  href="/testimonials"
-                  className="transition-colors hover:text-white"
-                >
-                  Testimonials
-                </a>
-              </li>
+             
             </ul>
           </div>
 
